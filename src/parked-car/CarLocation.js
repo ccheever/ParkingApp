@@ -2,11 +2,14 @@
 import React from 'react'
 import { StyleSheet } from 'react-native'
 import { connect } from 'react-redux'
-import MapView from 'react-native-maps'
 import { View } from '@shoutem/ui'
 import { deltaLat, deltaLong } from '../state/map-viewport'
 
 import type { MapRegion } from '../state/map-viewport'
+
+import { Components } from 'exponent';
+const MapView = Components.MapView;
+
 
 const CarLocationBase = (props: {
   height: number,

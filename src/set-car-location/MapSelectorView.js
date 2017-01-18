@@ -1,11 +1,14 @@
 // @flow
 import React from 'react'
 import { StyleSheet } from 'react-native'
-import MapView from 'react-native-maps'
+//import MapView from 'react-native-maps'
 import { connect } from 'react-redux'
 import { updateRegion, deltaLat, deltaLong } from '../state/map-viewport'
 
 import type { MapRegion } from '../state/map-viewport'
+
+import { Components } from 'exponent';
+const MapView = Components.MapView;
 
 const MapViewBase = (props: {
   dispatch: Function,
